@@ -1,0 +1,238 @@
+\documentclass[12pt,a4paper]{book}
+
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{ftnxtra}
+\usepackage{fnpos}
+\usepackage{lipsum}
+
+\definecolor{laranja} {RGB} {255, 165, 0}
+
+\onehalfspacing
+
+\begin{document}
+
+\title{Minicurso LaTex}
+\author{Murilo Vaz Caetité\footnote{Graduando IO}}
+\maketitle
+
+\tableofcontents
+\include{Intro}
+
+\section{Grupos}
+\textbf{Albatrozes:}
+
+\begin{itemize}
+
+\item Maior espécie é o albatroz-errante, chegando a 3m de envergadura e pesando de 3kg a 8kg
+ %Albatrozes são muito legais
+\item Constroem um grande ninho em forma de tigela e colocam um único ovo, sendo que se reproduzem geralmente a cada 2 anos. Das 4 espécies na antártica (que se reproduzem na Geórgia do Sul mais especificamente), apenas uma se reproduz anualmente. Costumam levar 10 anos para atingir maturidade sexual e vivem por muito tempo, podendo chegar até mais de 60 anos. As 4 espécies citadas representam todos os gêneros do grupo no hemisfério sul.  $x=2$, $x*2$, $x/2$, $\frac{x}{x+3}$, $a^{5x}$, $\sqrt[2]{x}$, $\log4$, $\log_{4}3$, $\sin 60$,$\cos 60$, $\tan 60$, $\int 5x$
+$\rightarrow$ $\overrightarrow{\Delta r}$ $\left\lbrace\frac{5}{6}\right\rbrace$
+\begin{equation}
+\lim_{x\rightarrow 0} (x^{3}-2)
+\end{equation}
+\begin{equation}
+\int_{0}^{\infty}f(x)dx=F(b)-F(a)
+\end{equation}
+\begin{equation}
+\vec{F}\:=\:-G\:\frac{m_1\:m_2}{r^2}\:\hat{r}
+\end{equation}
+\begin{equation}
+\left(\begin{array}{lr}
+a&b\\
+c&d\\
+\end{array}
+\right)
+\end{equation}
+
+\begin{equation}
+x=2
+\end{equation}
+\begin{equation}
+\left\lbrace
+\begin{array}{cc}
+3x + 2y = 6 \\
+2x + 3y = 5
+\end{array}
+\right.
+\end{equation}
+\begin{eqnarray}
+3x + 2y = 6 \\
+2x + 3y = 5
+\end{eqnarray}
+\begin{eqnarray}
+\overbrace{ABC} \\
+\underbrace{AB} \\
+\overline{ab} \\
+\underline{cd}\\
+\overrightarrow{ABCD}\\
+\overleftarrow{ABCD}\\
+\widehat{A \cdot B}
+\end{eqnarray}
+
+\end{itemize}
+\begin{equation}
+A+B\:\stackrel{2\:min}{\longrightarrow}\:C+D 
+\end{equation}
+\begin{tabular}{| l | c | r | c |} \hline
+Célula 1 & Célula 2 & Célula 3 & Célula 11 \\ \hline
+Célula 4 & Célula 5 & Célula 6 & Célula 11 \\ \hline
+Célula 7 & Célula 8 & Célula 9 & Célula 11 \\ \hline
+\end{tabular}\\ 
+
+\begin{tabular}{| c | c | c | c |} \hline
+\multicolumn{4}{ | c |}{Meses do ano} \\ \hline
+Janeiro & Fevereiro & Março & Abril \\ \hline
+Maio & Junho & Julho & Agosto \\ \hline
+Setembro & Outubro & Novembro & Dezembro \\ \hline
+\end{tabular}
+
+\newpage
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{C:/Users/vcmur/Pictures/Saved Pictures/Kyoka Jiro.png}
+\label{ImagemLampada}
+\caption{Imagem de uma lâmpada}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Jogadores mais valiosos do brasileirão 2022}
+\vspace{0.5cm}
+\begin{tabular}{c|cc}
+Nome & Clube & Valor ($km^2$) \\
+\hline
+1 & Rússia & 17.098.246 \\
+2 & Canadá & 9.984.670 \\
+3 & China & 9.596.961 \\
+4 & Estados Unidos & 9.371.174 \\
+5 & Brasil & 8.515.767
+\end{tabular}
+\end{table}
+
+\begin{flushright}
+\begin{minipage}[t]{12cm}
+\hrulefill
+
+Trabalho Final de graduação do curso de Análise e desenvolvimento de Sistemas da Faculdade de Tecnologia do Estado de São Paulo
+apresentado como requisito para a obtenção do grau de tecnólogo em Análise e desenvolvimento de sistemas.
+
+\hrulefill
+
+\vspace{0.2cm}
+
+{\bf Orientador: Prof. Dr. Fulano}
+\end{minipage}
+\end{flushright}
+
+\newpage
+
+\begin{titlepage}
+
+\addtolength{\topmargin}{1.5cm}
+
+\textheight = 20cm
+\textwidth = 14cm
+
+\setlength{\baselineskip}{1.4\baselineskip}
+\begin{center}
+
+{\large NOME DA UNIVERSIDADE}
+
+{\large INSTITUIÇÃO ACADÊMICA OU ESCOLA OU FACULDADE}
+\end{center}
+
+\vspace{2cm}
+\begin{center}
+{\Large\textbf{Título de seu trabalho } }
+\end{center}
+
+\vspace{1.5cm}
+
+\begin{center}
+{\Large Autor do trabalho}
+\end{center}
+
+\vspace{2cm}
+\begin{flushright}
+\begin{minipage}{10cm}
+\hrulefill
+
+Trabalho final de graduação do curso de Análise e desenvolvimento de sistemas da Faculdade de tecnologia
+do Estado de São Paulo apresentado como pré requisito para a obtenção do grau de tecnólogo em Análise e
+desenvolvimento de sistemas.
+
+\hrulefill
+
+{\textbf{Orientador: Prof.Dr: Fulano}}
+\end{minipage}
+\end{flushright}
+\setlength{\baselineskip}{0.7\baselineskip}
+\vfill
+
+\begin{center}
+São Paulo
+
+Setembro de 2022
+\end{center}
+
+\end{titlepage}
+
+\newpage
+\begin{center}
+\rule {10cm}{0,01cm}
+
+Murilo Vaz
+
+\vspace{10cm}
+
+\rule {10cm}{0,01cm}
+
+Murilo Vaz 2
+\end{center}
+
+\begin{equation} \label{EqTrigonometria}
+\sin^2\alpha + \cos^2\alpha = 1
+\end{equation}
+
+\begin{equation} \label{EqTrigonometria}
+\sin^2\alpha + \cos^2\alpha = 1
+\end{equation}
+
+A equação acima \ref{EqTrigonometria} é a primeira relação fundamental da
+trigonometria
+\newpage
+\begin{figure}
+\centering
+\subfigure[Yamato\label{Yamato}]{\includegraphics[scale =
+0.21]{"C:/Users/vcmur/Pictures/Saved Pictures/Yamato.png"}}
+\subfigure[Nezuko\label{Nezuko}]{\includegraphics[scale =
+0.29]{"C:/Users/vcmur/Pictures/Saved Pictures/Nezuko.png"}}
+\center{\subfigure[Planeta Saturno\label{FigSaturno}]{\includegraphics[scale =
+0.2]{"C:/Users/vcmur/Pictures/Saved Pictures/Sanji.png"}}}
+\caption{Sanji no paraíso\cite{BARBOZA}\label{FigSistemaSolar}
+\end{figure}
+Nas imagens acima, \ref{Yamato} representa o planeta Terra, \ref{Nezuko} o
+planeta vermelho Marte e \ref{FigSaturno} o planeta Saturno, que compõe os anéis.
+A imagem acima \ref{FigSistemaSolar}, portanto, contém 3 planetas do Sistema
+Solar.
+
+Aprenda, persista e estude a cada dia \cite{BARBOZA}.
+
+\begin{thebibliography}{1}
+\bibitem {BARBOZA} BARBOZA, R.C; Curso de LaTeX. Universidade de São
+Paulo, 2021.
+\end{thebibliography}
+
+\begin{thebibliography}{1}
+\bibitem {BARBOZA} BARBOZA, R.C; Curso de LaTeX. Universidade de São
+Paulo, 2021.
+\end{thebibliography}
+\end{document}
